@@ -21,3 +21,7 @@ Route::get('/contact', function() {
 Route::get('/blog', function() {
   return view('blog');
 });
+
+Route::get('/send', function(){
+  SMSProvider::createSubscription('+254729543970', '22384', 'lifecode');
+});

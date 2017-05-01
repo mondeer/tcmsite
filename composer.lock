@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69879e406a43af317353b191656aafd5",
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "hash": "45c75a88161cbf8e30b135c06f44b0fb",
+    "content-hash": "1b7378821390c9136bf56891ad8b2f87",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -150,6 +150,60 @@
             "time": "2016-11-02 15:56:58"
         },
         {
+            "name": "freddiedfre/africas_talking_laravel_5",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freddiedfre/AfricasTalkingLaravel5.git",
+                "reference": "3345bb8beada1f1a2beba38d4732be75e22992bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freddiedfre/AfricasTalkingLaravel5/zipball/3345bb8beada1f1a2beba38d4732be75e22992bd",
+                "reference": "3345bb8beada1f1a2beba38d4732be75e22992bd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": "~5.5|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FreddieDfre\\AfricasTalkingLaravel5\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrick A",
+                    "email": "fredrickanyera@gmail.com",
+                    "homepage": "https://github.com/freddiedfre",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package for integrating Africa's Talking SMS gateway into a Laravel 5 App.",
+            "homepage": "https://github.com/freddiedfre/AfricasTalkingLaravel5",
+            "keywords": [
+                "Africastalking",
+                "sms gateway"
+            ],
+            "time": "2016-03-17 06:12:41"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -235,6 +289,39 @@
                 }
             ],
             "time": "2015-04-20 18:58:01"
+        },
+        {
+            "name": "kagga/telco",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jokamjohn/telco.git",
+                "reference": "49443d606e422eec7959010aa9b4ee39dc196933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jokamjohn/telco/zipball/49443d606e422eec7959010aa9b4ee39dc196933",
+                "reference": "49443d606e422eec7959010aa9b4ee39dc196933",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kagga\\Telco\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Kagga",
+                    "email": "johnkagga@arvana.io"
+                }
+            ],
+            "description": "Wrapper around the AfricasTalking api",
+            "time": "2017-01-17 17:33:55"
         },
         {
             "name": "laravel/framework",
@@ -3339,7 +3426,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "freddiedfre/africas_talking_laravel_5": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
